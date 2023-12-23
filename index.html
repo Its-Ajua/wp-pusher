@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WP Pusher | Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="navbar__menu">
+                <ul>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Learn more</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#" class="btn btn--outline">Account</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Checkout -->
+    <main class="checkout">
+        <section class="checkout__main">
+            <h2>Checkout</h2>
+            <form class="checkout__form">
+                <hr />
+
+                <div class="checkout__form__step">
+                    <span>1</span>
+                    <h3>Your Basic Information</h3>
+                </div>
+                <div class="checkout__form__grid">
+                    <div class="checkout__form__group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Jane" required />
+                    </div>
+
+                    <div class="checkout__form__group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Doe" required />
+                    </div>
+
+                    <div class="checkout__form__group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="janedoe@example.com" required />
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="checkout__form__step">
+                    <span>2</span>
+                    <h3>Your Payment Information</h3>
+                </div>
+
+                <div class="checkout_form_credit_card">
+                    <label for="card_number">Credit Card</label>
+                    <div class="checkout_form_credit_card__input">
+                        <input type="number" name="card_number" id="card_number" placeholder="Card Number"
+                            maxlength="16" required>
+                        <input type="text" name="card_validity" id="card_validity" placeholder="MM/YY" maxlength="5"
+                            required>
+                        <input type="number" name="card_cvv" id="card_cvv" placeholder="CVV" maxlength="3" required>
+                    </div>
+                </div>
+
+                <hr />
+
+                <button class="btn btn--success">Buy WP Pusher</button>
+            </form>
+
+            <div class="checkout__support">
+                <span>?</span>
+                <p>Need help? Don't hesitate to <a href="#">contact support</a>!</p>
+            </div>
+
+            <img class="powered-by-stripe" src="images/powered-by-stripe.png" alt="Powered by Stripe" />
+        </section>
+        <section class="checkout__pricing">
+            <h3>Freelancer</h3>
+
+            <p class="checkout__price">
+                <span class="checkout__price--dollar">$</span>
+                <span class="checkout__price--number">99</span>
+                <span class="checkout__price--month">/year</span>
+            </p>
+
+            <p class="checkout__description">
+                Automatically renews after 1 year.
+            </p>
+
+            <div class="checkout__features">
+                <ul>
+                    <li>Use on 5 client sites</li>
+                    <li>Private repositories</li>
+                    <li>Email support</li>
+                </ul>
+            </div>
+
+            <div class="cta">
+                <p>Need <span>20</span> client sites?</p>
+                <a href="#">Switch to the Agency plan</a>
+            </div>
+
+
+            <div class="checkout__testimonial">
+                <p>
+                    FTP is horrible to deal with. <span style="font-weight: bold;">WP Pusher</span> solves that issue,
+                    and
+                    the customer support is awesome!
+                </p>
+
+                <div class="checkout__testimonial__author">
+                    <img src="images/avatar.png" alt="Avatar" />
+                    <span>Kirk Beard</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <p class="copyright">&copy;
+        2018 WP Pusher IVS &bull; <a href="#">Terms of Service</a>
+    </p>
+</body>
+</html>
